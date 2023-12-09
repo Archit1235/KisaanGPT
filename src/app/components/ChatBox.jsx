@@ -91,7 +91,7 @@ const ChatBox = () => {
 
     const message = await openai.beta.threads.messages.list(thread.id);
 
-    return String(message.data[0].content[0].text.value);
+    return String(message.data[0].content[0].text.value).replace(/\*/g, "");
   };
 
   const askBot = async () => {
