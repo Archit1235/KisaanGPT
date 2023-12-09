@@ -1,0 +1,14 @@
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header p {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5rem;
+}

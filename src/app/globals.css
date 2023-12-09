@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color: theme(colors.slate.950);
+  --text-color: theme(colors.slate.200);
+  --user-color: theme(colors.slate.800);
+  --bot-color: theme(colors.slate.700);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  scrollbar-width: 0px;
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  border: none;
+  background: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text-color);
+  background: var(--background-color);
+}

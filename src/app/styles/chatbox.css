@@ -1,0 +1,59 @@
+.chatbox-container {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 100px);
+}
+
+.messages-container {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.input-container {
+  gap: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: var(--text-color);
+  background-color: var(--user-color);
+}
+
+.question-input:focus {
+  color: var(--text-color);
+  background: var(--user-color);
+}
+
+.question-input::placeholder {
+  color: var(--text-color);
+}
+
+.question-button {
+  height: 100%;
+  border: none;
+  padding: 0 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  background-color: var(--bot-color);
+  color: var(--text-color);
+}
