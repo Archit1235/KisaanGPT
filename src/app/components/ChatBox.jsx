@@ -89,9 +89,15 @@ const ChatBox = () => {
       response = await openai.beta.threads.runs.retrieve(thread.id, run.id);
     }
 
-    const message = await openai.beta.threads.messages.list(thread.id);
+    var message = await openai.beta.threads.messages.list(thread.id);
+    message = String(message.data[0].content[0].text.value).replace(/\*/g, "");
 
-    return String(message.data[0].content[0].text.value).replace(/\*/g, "");
+    if (message == question) {
+      message =
+        "Sorry, I don't know the answer to that question. Please try another one.";
+    }
+
+    return message;
   };
 
   const askBot = async () => {
