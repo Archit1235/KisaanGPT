@@ -87,6 +87,7 @@ const ChatBox = () => {
     while (response.status == "in_progress" || response.status == "queued") {
       await new Promise((resolve) => setTimeout(resolve, 5000));
       response = await openai.beta.threads.runs.retrieve(thread.id, run.id);
+      console.log(response);
     }
 
     var message = await openai.beta.threads.messages.list(thread.id);
