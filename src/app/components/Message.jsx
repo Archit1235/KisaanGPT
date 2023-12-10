@@ -9,9 +9,9 @@ const Message = ({ sender, message }) => {
         sender == "You" ? "bg-user-color items-end" : "bg-bot-color items-start"
       }`}
     >
-      <p className="text-xl md:text-2xl font-bold">{sender}</p>
+      <p className="text-lg md:text-2xl font-bold">{sender}</p>
 
-      <p className="text-md md:text-lg whitespace-pre-wrap">{message}</p>
+      <p className="text-sm md:text-lg whitespace-pre-wrap">{message}</p>
     </div>
   );
 };

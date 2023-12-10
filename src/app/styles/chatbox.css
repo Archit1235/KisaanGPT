@@ -5,7 +5,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 60px);
 }
 
 .messages-container {
@@ -28,7 +28,7 @@
 
 .question-input {
   width: 100%;
-  height: 50px;
+  height: 40px;
   border: none;
   outline: none;
   padding: 0 20px;
@@ -52,8 +52,22 @@
   border: none;
   padding: 0 20px;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border-radius: 10px;
   background-color: var(--bot-color);
   color: var(--text-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .chatbox-container {
+    height: calc(100vh - 80px);
+  }
+  .question-input {
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .question-button {
+    font-size: 1.2rem;
+  }
 }
