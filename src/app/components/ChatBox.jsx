@@ -10,7 +10,7 @@ import getWeather from "../api/getWeather";
 
 const testMessages = [
   {
-    sender: "Bot",
+    sender: "KisaanGPT",
     message:
       "Hello, there. I'm KisaanGPT. I can help you with questions regarding farming and agriculture. Ask me anything.",
   },
@@ -103,7 +103,7 @@ const ChatBox = () => {
   const askBot = async () => {
     setMessages((prevMessages) => [
       ...prevMessages,
-      { sender: "Bot", message: "Wondering..." },
+      { sender: "KisaanGPT", message: "Wondering..." },
     ]);
 
     // const reply = await getWeather(question);
