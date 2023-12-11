@@ -12,7 +12,7 @@ const testMessages = [
   {
     sender: "KisaanGPT",
     message:
-      "Hello, there. I'm KisaanGPT. I can help you with questions regarding farming and agriculture. Ask me anything.",
+      "Hello, kisaan!\nI'm KisaanGPT. I can help you with questions regarding farming and agriculture. Ask me anything.",
   },
 ];
 
